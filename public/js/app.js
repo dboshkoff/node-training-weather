@@ -1,6 +1,6 @@
 const fetchWeatherData = (address) => {
   return new Promise((resolve, reject) => {
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`/weather?address=${address}`)
       .then((res) => {
         resolve(res.json());
       });
