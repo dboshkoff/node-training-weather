@@ -28,6 +28,5 @@ window.addEventListener('DOMContentLoaded', () => {
         errorMsg.innerText = '';
       }
     });
-
   })
 });
