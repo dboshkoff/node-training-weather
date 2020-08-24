@@ -13,7 +13,7 @@ forecast = (lat, long, cb) => {
     else {
       const { current } = body;
       const { temperature, precip, weather_descriptions } = current;
-      cb(undefined, `Right now, it's ${weather_descriptions[0]}. It is ${temperature} degrees out. There is a ${precip} percent chance of rain.`);
+      cb(undefined, `Right now, it's ${weather_descriptions[0].toLowerCase()}. It is ${temperature} degrees out. There is a ${precip} percent chance of rain.`);
     }
   });
 }
